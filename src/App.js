@@ -3,7 +3,7 @@ import Transactions from './components/Transactions';
 import './App.css';
 import axios from 'axios';
 function App() {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(0);
   const [transactions, setTransactions] = useState([
     // {value: '1000', interest: 10},
     // {value: '1000', interest: 1000},
