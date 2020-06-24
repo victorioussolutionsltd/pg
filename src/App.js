@@ -15,10 +15,9 @@ function App() {
 
   const calculateInterest = (event) => {
     axios
-      .get('/interest?={value}')
+      .get('http://localhost:8080/interest?={value}')
       .then(function (response) {
-        const updatedTransactions = [...transactions, response.data];
-        setTransactions(updatedTransactions);
+        setTransactions(response.data);
       })
       .catch(function (error) {
         // handle error
